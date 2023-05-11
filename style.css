@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.logo {
+    border-bottom: 2px solid #e93d3d;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container h3 {
+    font-size: 32px;
+    color: #e93d3d;
+}
+.container h3.mob{
+    display: none;
+}
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.container h1 {
+    color: #e93d3d;
+}
+
+.container h5 {
+    font-size: 25px;
+    margin: 0px;
+    line-height: 35px;
+}
+
+.container .video {
+    padding-bottom: 40px;
+}
+
+.container button {
+    box-shadow: 0 0 25px #0003, 0 0 15px #0003, 0 0 3px #0006;
+    background: #e93d3d;
+    border: #e93d3d;
+    color: #fff;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 40px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.container button:hover {
+    box-shadow: 0 8px 5px -5px #00000040;
+    transform: translateY(-10px);
+}
+
+.coprright {
+    text-align: center;
+    border-top: 2px solid #e93d3d;
+    padding: 20px 0;
+}
+
+.coprright p {
+    width: 70%;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+
+/* media query */
+@media screen and (max-width: 1050px) {
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    .container h3.pc{
+        display: none;
+    }
+    .container h3.mob{
+        display: block;
+    }
+    .container h3 {
+        font-size: 18px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        padding: 0 30px;
+    }
+
+    .container h1 {
+        color: #e93d3d;
+        font-size: 27px;
+    }
+
+    .container h5 {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0 30px;
+    }
+
+    .container {
+        width: unset;
+    }
+
+    .container .video {
+        padding: 30px;
+    }
+
+    .container button {
+        font-size: 20px;
+    }
+
+    .coprright p {
+        width: unset;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+}
