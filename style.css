@@ -82,7 +82,7 @@ body {
 
 
 /* media query */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 767) {
     .logo img {
         width: 100px;
         height: 100px;
@@ -129,5 +129,33 @@ body {
         width: unset;
         padding: 0 10px;
         font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .logo img {
+        width: 200px;
+        height: 200px;
+    }
+    .container h2 {
+        font-size: 36px;
+    }
+    .container h3.pc{
+        display: block;
+        font-size: 32px;
+    }
+    .container h3.mob{
+        display: none;
+    }
+    .container h1 {
+        font-size: 36px;
+    }
+    .container h5 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .container button{
+        font-size: 41px;
     }
 }
